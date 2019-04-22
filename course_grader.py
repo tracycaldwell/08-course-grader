@@ -8,10 +8,10 @@ def course_grader(test_scores):
     minimum = min(test_scores)
     # if average score is >= 70 AND no score is below 50, pass
     if average >= 70 and minimum > 50:
-        return "Pass"
+        return "pass"
     # if average score < 70 OR at least one score is below 50, fail
     elif average < 70 or minimum < 50:
-        return "Fail"
+        return "fail"
 
 def main():
     print(course_grader([100,75,45]))     # "fail"
